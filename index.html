@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <meta sharset="UTF-8" />
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <form action="">
+        <form action="https://coivdavid12.github.io/crclinica/" method="get">
             <div class="titulo">
                 <h1>Faça o seu login</h1>
                 <div class="barra-horizontal"></div>
@@ -15,27 +15,25 @@
 
             <div class="campo-input">
                 <label for="name">Nome*</label>
-                <input type="text" id="name" />
+                <input type="text" id="name" required/>
             </div>
 
             <div class="campo-input">
                 <label for="cpf">CPF*</label>
-                <input type="number" id="cpf" />
+                <input type="number" id="cpf" required/>
             </div>
 
             <div class="campo-input">
                 <label for="nascimento">Data de nascimento*</label>
-                <input type="date" id="nascimento" />
+                <input type="date" id="nascimento" required/>
             </div>
 
             <div class="lembrar-me">
-                <input type="checkbox" />
-                <p>lembrar-me</p>
+                <input type="checkbox" id="lembrar" />
+                <label for="lembrar">Lembrar-me</label>
             </div>
 
-
-        <a href="https://coivdavid12.github.io/crclinica/"><input type="button" value="Entrar"></a>   
-    
+            <button type="submit">"Entrar"</button>
     
         </form>
     </body>
